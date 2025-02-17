@@ -1,0 +1,58 @@
+:root {
+  box-sizing: border-box;
+  --focus-color: #1D4ED8;
+  --error-color: #B91C1C;
+  --accent-color: #596D48;
+  --off-white: #F9FAFB;
+
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+
+.page-container {
+  background-color: var(--off-white);
+  display: flex;
+
+}
+
+.splash {
+  flex: 1 1 auto;
+}
+.form-container {
+  flex: 2 1 auto;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.form-container div {
+  flex: 0 1 35%;
+  padding: 0.25em;
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+input:focus {
+  border-color: var(--focus-color);
+}
+
+input:invalid {
+  border-color: var(--error-color);
+}
